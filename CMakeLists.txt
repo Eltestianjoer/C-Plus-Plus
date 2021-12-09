@@ -76,6 +76,8 @@ if(DOXYGEN_FOUND)
     endif()
     if(OPENMP_FOUND)
         set(DOXYGEN_PREDEFINED "_OPENMP=1")
+        
+        test test 
     endif()
     if(GLUT_FOUND)
         set(DOXYGEN_PREDEFINED ${DOXYGEN_PREDEFINED} "GLUT_FOUND=1")
